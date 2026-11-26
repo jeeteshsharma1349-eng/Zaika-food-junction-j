@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="hi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#17130f"><title>Zaika Food Junction Billing</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="top"><div class="brand"><div class="logo">Z</div><div><div class="brandname">ZAIKA FOOD JUNCTION</div><small>DAILY BILLING & SALES</small></div></div><div class="date" id="today"></div></header>
+<main>
+<section class="stats"><article><small>Today's Sales</small><b id="sales">₹0</b></article><article><small>Today's Bills</small><b id="count">0</b></article><article><small>Average Bill</small><b id="avg">₹0</b></article></section>
+<div class="layout">
+<section class="menu panel"><div class="heading"><div><small>MENU</small><h1>Select Items</h1></div><input id="search" placeholder="Search item..."></div><div id="cats" class="cats"></div><div id="products" class="products"></div></section>
+<aside class="bill panel"><div class="heading"><div><small>NEW TRANSACTION</small><h2>Current Bill</h2></div><button class="clear" id="clear">Clear</button></div><label>Customer name<input id="customer" placeholder="Walk-in customer"></label><div id="cart" class="cart"><p class="empty">Menu se item select karein.</p></div><div class="totals"><div><span>Subtotal</span><b id="subtotal">₹0</b></div><div><span>Discount (₹)</span><input id="discount" type="number" min="0" value="0"></div><div class="grand"><span>Total</span><b id="total">₹0</b></div></div><label>Payment<select id="payment"><option>Cash</option><option>UPI</option><option>Card</option></select></label><button id="save" class="save" disabled>Save Bill & Print</button><p class="hint">Bill save hone ke baad WhatsApp share aur reprint kar sakte hain.</p></aside>
+</div>
+<section class="panel history"><div class="heading"><div><small>RECORDS</small><h2>Today's Bills</h2></div><button id="allBills" class="clear">Show all</button></div><div id="history"></div></section>
+</main>
+<div id="print"></div><div id="toast"></div><script src="app.js"></script></body></html>
